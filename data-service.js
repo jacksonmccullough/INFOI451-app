@@ -19,7 +19,7 @@ function initialize() {
         return;
       }
 
-      // After employees are loaded, read departments
+
       fs.readFile(path.join(__dirname, "data", "departments.json"), "utf8", (err, data) => {
         if (err) {
           reject("unable to read departments file");
